@@ -1,0 +1,41 @@
+/*--------------------------------------------------------
+Style Sheet for splash component. UDACITY Project - Cloud Developper Nanodegree
+version: 0.0.1
+last modified: 26/03/2021
+author: E. RONDON
+----------------------------------------------------------*/
+@use 'theme';
+.page-splash {
+    background: radial-gradient(circle, #039BE5, #01579b);
+    align-items: center;    
+}
+
+#login-box {
+    max-width: 600px;
+    margin: 100px auto;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2),0 1px 1px 0 rgba(0,0,0,0.14),0 2px 1px -1px rgba(0,0,0,0.12);
+    border-radius:theme.$border-radius;
+    background: white;
+    padding: theme.$max-padding;
+    z-index:2;
+    font-family: theme.$lato-font;
+
+    h1 {
+        margin: theme.$medium-margin theme.$min-margin;
+        color: theme.$primary-color
+    }
+
+    p{
+        margin: theme.$medium-margin theme.$min-margin;
+        color: theme.$second-text-color;
+    }
+
+    input{
+        width: 95%;
+        padding: theme.$min-padding;  
+        margin: theme.$medium-margin 0;
+        border-radius: theme.$border-radius;
+        resize: none;
+    }
+
+}
